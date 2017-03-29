@@ -1,0 +1,18 @@
+Throwable - общий класс для всех исключений
+Класс Throwable наследуют два класса - Error (системные ошибки) и Exception(не системные ошибки)
+
+Класс VirtualMachineError наследуется от Error
+OutOfMemoryError и StackOverflowError отнаследованы от VirtualMachineError
+
+
+RuntimeException - потомок класса Exception
+Потомки RuntimeException - ArithmeticException, IllegalArgumentException, IllegalStateException
+Группа RuntimeException называется непроверяемыми исключениями.
+
+
+try - оператор, которым мы помечаем блок кода,
+где хотим отловить ошибку и не дать ей
+остановить программу
+catch (E e) - оператор, указывается непосредственно после try-блока
+catch срабатывает, если в блоке try возникло исключение типа E
+e - объект ошибки

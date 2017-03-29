@@ -1,0 +1,20 @@
+1) Описать интерфейс List<T>
+методы:
+void add(T element);
+T get(int index);
+int find(T element); - через equals
+void removeAt(int index);
+void remove(T element); - через equals
+void size();
+
+Две реализации - ArrayList<T> и LinkedList<T>
+ArrayList при переполнении вызывать метод resize();
+void resize() {
+    currentSize -> увеличить в полтора раза
+
+    Object newElements = new Object[currentSize];
+    // копируете в newElements элементы elements
+    this.elements = newElements;
+   }
+}
+
